@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Math | Let's Learn</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html">
+            <h1>Let's Learn</h1>
+        </a>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2><a href="./maths.html">Math Notes</a></h2>
+            <h3 class="spaced topic">Statistics II</h3>
+        </section>
+
+        <div>
+            <section class="contents">
+                <ul>
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#MeanusingWorkingAssumedMean">Mean using Working (Assumed) Mean</a></li>
+                    <li><a href="#MeanofGroupedData">Mean of Grouped Data</a></li>
+                    <li><a href="#QuartilesDecilesandPercentiles">Quartiles, Deciles and Percentiles</a>
+                        <ul>
+                            <li><a href="#MedianfromCumulativeFrequencyCurve">Median from Cumulative Frequency
+                                    Curve&nbsp;</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#MeasureofDispersion">Measures of Dispersion</a>
+                        <ul>
+                            <li><a href="#Range">Range</a></li>
+                            <li><a href="#MeanAbsoluteDeviation">Mean Absolute Deviation</a></li>
+                            <li><a href="#Variance">Variance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Moreformulas">More Formulas</a></li>
+                    <li><a href="#PastKCSEQuestionsontheTopic">Past KCSE Questions on the Topic</a></li>
+                </ul>
+            </section> 
+            <h2 class="spaced"><a id="Introduction">Introduction</a></h2>
+            <ul>
+                <li><span class="fontstyle0">These statistical measures are called measures of central tendency and they
+                        are mean, mode and median.</span></li>
+            </ul> 
+            <h2 class="spaced"><a id="MeanusingWorkingAssumedMean">Mean using Working (Assumed) Mean</a></h2>
+            <ul>
+                <li><span class="fontstyle0">Assumed mean is a method of calculating the arithmetic men and standard
+                        deviation of a data set.</span></li>
+                <li><span class="fontstyle0"> It&nbsp;simplifies calculation.<br><br></span><strong><span
+                            class="fontstyle0">Example<br></span></strong><span class="fontstyle0">The masses to the
+                        nearest kilogram of 40 students in the form 3 class were measured and recorded in
+                        the&nbsp;</span><span class="fontstyle0"><span class="fontstyle0">table below. Calculate the
+                            mean mass<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Mass kg</td>
+                                <td>47&nbsp;</td>
+                                <td>48&nbsp;</td>
+                                <td>49&nbsp;</td>
+                                <td>50&nbsp;</td>
+                                <td>51&nbsp;</td>
+                                <td>52&nbsp;</td>
+                                <td>53</td>
+                                <td>54</td>
+                                <td>55</td>
+                                <td>56</td>
+                                <td>57</td>
+                                <td>58</td>
+                                <td>59</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>Number of<br>employees</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table> <strong><span class="fontstyle0">Solution<br></span></strong><span class="fontstyle0"><span
+                            class="fontstyle0">We are using assumed mean of 53<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td><strong>Mass x kg&nbsp;</strong></td>
+                                <td><strong>t= x - 53&nbsp;</strong></td>
+                                <td><strong>f</strong></td>
+                                <td><strong>ft</strong></td>
+                            </tr>
+                            <tr>
+                                <td>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55&nbsp;<br>56&nbsp;<br>57&nbsp;<br>58&nbsp;<br>59<br>60
+                                </td>
+                                <td>-6<br>-5<br>-4<br>-3<br>-2<br>-1<br>0&nbsp;<br>1<br>2&nbsp;<br>3&nbsp;<br>4&nbsp;<br>5&nbsp;<br>6<br>7
+                                </td>
+                                <td>2&nbsp;<br>0&nbsp;<br>1&nbsp;<br>2&nbsp;<br>3&nbsp;<br>2&nbsp;<br>5&nbsp;<br>6<br>7&nbsp;<br>5&nbsp;<br>3&nbsp;<br>2&nbsp;<br>1<br>1
+                                </td>
+                                <td>-12<br>0&nbsp;<br>-4&nbsp;<br>-6&nbsp;<br>-6&nbsp;<br>-2&nbsp;<br>0&nbsp;<br>6<br>14<br>15<br>12<br>10<br>6<br>7
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><span class="fontstyle0">Σ</span><span class="fontstyle0">f&nbsp;</span><span
+                                        class="fontstyle0">= 40</span></td>
+                                <td><span class="fontstyle0">Σ</span><span class="fontstyle0">ft = 40</span></td>
+                            </tr>
+                        </tbody>
+                    </table> <br><span class="fontstyle0">Mean of t&nbsp;</span><span class="fontstyle2">= <span
+                            style="text-decoration: underline;"><span class="fontstyle0">Σ</span><span
+                                class="fontstyle0">ft</span></span>= <span
+                            style="text-decoration: underline;">40&nbsp;</span> &nbsp;= 1<br><span
+                            class="fontstyle0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            Σ</span><span class="fontstyle0">f&nbsp; &nbsp; 40<br></span></span>Mean of x = 53 + mean of
+                    t<br><span class="fontstyle0">= 53 + 1<br></span><span class="fontstyle0">= 54</span>
+                </li>
+            </ul>
+            <h2 class="spaced"><a id="MeanofGroupedData">Mean of Grouped Data</a></h2>
+            <ul>
+                <li><span class="fontstyle0"><span class="fontstyle0">The masses to the nearest gram of 100 eggs were as
+                            follows<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Mass</td>
+                                <td>100- 103&nbsp;</td>
+                                <td>104- 107&nbsp;</td>
+                                <td>108- 111&nbsp;</td>
+                                <td>112-115&nbsp;</td>
+                                <td>116-119&nbsp;</td>
+                                <td>120-123</td>
+                            </tr>
+                            <tr>
+                                <td>Frequency&nbsp;</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>42</td>
+                                <td>31</td>
+                                <td>8</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0">Find the mean mass<br><br></span><span class="fontstyle0"><span
+                            style="text-decoration: underline;"><strong>Solution</strong></span><br></span><span
+                        class="fontstyle0"><span class="fontstyle0">Let use a working mean of 109.5.<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>class</td>
+                                <td>Mid-point x&nbsp;</td>
+                                <td>t= x - 109.5&nbsp;</td>
+                                <td>f</td>
+                                <td>ft</td>
+                            </tr>
+                            <tr>
+                                <td>100-103&nbsp;<br>104-107&nbsp;<br>108-111&nbsp;<br>112-115&nbsp;<br>116-119<br>120-123
+                                </td>
+                                <td>101 .5&nbsp;<br>105.5&nbsp;<br>109.5&nbsp;<br>113.5&nbsp;<br>117.5<br>121 .5</td>
+                                <td>-8&nbsp;<br>-4&nbsp;<br>0&nbsp;<br>4&nbsp;<br>8 <br>12</td>
+                                <td>1&nbsp;<br>15&nbsp;<br>42&nbsp;<br>31&nbsp;<br>8 <br>3</td>
+                                <td>–8<br>–60<br>0<br>124<br>64<br>36</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Σf=100</td>
+                                <td>Σft=156</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0">Mean of t = </span><span class="fontstyle2"><span
+                            style="text-decoration: underline;">156</span> = 1.56<br></span><span
+                        class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        100<br></span><span class="fontstyle0">Therefore,mean of x = 1 09.5 + mean of t<br></span><span
+                        class="fontstyle0">= 109.5 + 1.56<br></span><span class="fontstyle0">= 111.06 g</span>
+                </li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">To get the mean of a grouped data easily,
+                        we divide each figure by the class width after substracting the&nbsp;</span><span
+                        class="fontstyle0">assumed mean.</span></li>
+                <li><span class="fontstyle0">Inorder to obtain the mean of the original data from the mean of the new
+                        set of data, we&nbsp;</span><span class="fontstyle0"><span class="fontstyle0">will have to
+                            reverse the steps in the following order;</span></span>
+                    <ul>
+                        <li>Multiply the mean by the class width and then add the working mean.</li>
+                    </ul> <span class="fontstyle0"><br><strong>Example</strong><br></span><span class="fontstyle0"><span
+                            class="fontstyle0">The example above to be used to demonstrate the steps<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>class</td>
+                                <td>Mid-point x</td>
+                                <td>t=&nbsp;<span style="text-decoration: underline;">x-109.5</span><br>&nbsp; &nbsp;
+                                    &nbsp; &nbsp; 4</td>
+                                <td>f</td>
+                                <td>ft</td>
+                            </tr>
+                            <tr>
+                                <td>100-103&nbsp;<br>104-107&nbsp;<br>108-111&nbsp;<br>112-115&nbsp;<br>116-
+                                    119<br>120-123</td>
+                                <td>101.5&nbsp;<br>105.5&nbsp;<br>109.5&nbsp;<br>113.5&nbsp;<br>117.5<br>121.5</td>
+                                <td>-2&nbsp;<br>-1&nbsp;<br>0&nbsp;<br>1&nbsp;<br>2 <br>3</td>
+                                <td>1&nbsp;<br>15&nbsp;<br>42&nbsp;<br>31&nbsp;<br>8 <br>3</td>
+                                <td>–2<br>–15<br>0<br>31<br>16<br>9</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Σf=100</td>
+                                <td>Σft=39</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle2">t=&nbsp; <span
+                            style="text-decoration: underline;">∑ft</span>&nbsp; =&nbsp;<span
+                            style="text-decoration: underline;">39</span><br></span><span class="fontstyle2">&nbsp;
+                        &nbsp; &nbsp; ∑f&nbsp; &nbsp; &nbsp;</span><span class="fontstyle2">100<br></span><span
+                        class="fontstyle0">= 0.39<br></span><span class="fontstyle0">Therefore&nbsp;</span><span
+                        class="fontstyle2">̅x </span><span class="fontstyle0">= 0.39 x 4 + 109.5<br></span><span
+                        class="fontstyle0">= 1.56 + 109.5<br></span><span class="fontstyle0">= 111.06 g</span>
+                </li>
+            </ul> 
+            <h2 class="spaced"><a id="QuartilesDecilesandPercentiles">Quartiles, Deciles and Percentiles</a></h2>
+            <ul>
+                <li><span class="fontstyle0">A <strong>median</strong> divides a set of data into two equal part with
+                        equal number of items.</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0"><strong>Quartiles</strong> divides a set of
+                        data into four equal parts.The lower quartile is the median of the bottom
+                        half.The&nbsp;</span><span class="fontstyle0">upper quartile is the median of the top half and
+                        the middle coincides with the median of the whole set od&nbsp;</span><span
+                        class="fontstyle0">data</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0"><strong>Deciles</strong> divides a set of
+                        data into ten equal parts.&nbsp;<strong>Percentiles</strong>&nbsp;divides a set of data into
+                        hundred equal parts.<br></span><strong><span class="fontstyle0">Note;</span></strong></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">For percentiles, deciles and quartiles the
+                        data is arranged in order of size.</span><strong><strong><span
+                                class="fontstyle0"></span></strong></strong></li>
+            </ul>
+            <p><strong><strong><span class="fontstyle0">Example 1<br></span></strong></strong></p>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td><strong>&nbsp;Height in cm</strong></td>
+                        <td>145-149&nbsp;</td>
+                        <td>150-154</td>
+                        <td>155- 159 &nbsp;</td>
+                        <td>160- 164</td>
+                        <td>&nbsp;165-169</td>
+                        <td>170-174&nbsp;&nbsp;</td>
+                        <td>175-179&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>&nbsp;Frequency</strong></td>
+                        <td>&nbsp;2</td>
+                        <td>&nbsp;5</td>
+                        <td>&nbsp;16</td>
+                        <td>&nbsp;9</td>
+                        <td>&nbsp;5</td>
+                        <td>&nbsp;2</td>
+                        <td>&nbsp;1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle0">Calculate&nbsp;</span><span class="fontstyle0"><span
+                        class="fontstyle0">the;</span></span></p>
+            <ol style="list-style-type: lower-alpha;">
+                <li><span class="fontstyle0">Median height</span></li>
+                <li><span class="fontstyle0"></span>
+                    <ol style="list-style-type: lower-roman;">
+                        <li><span class="fontstyle0">Lower quartile</span></li>
+                        <li><span class="fontstyle0">Upper quartile</span></li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0">80</span><span class="fontstyle0"><sup>th</sup>&nbsp;</span><span
+                        class="fontstyle0">percentile</span></li>
+            </ol>
+            <p><span class="fontstyle0"><strong>Solution</strong><br></span></p>
+            <ol style="list-style-type: lower-alpha;">
+                <li><span class="fontstyle0"></span><span class="fontstyle0">There are 40 students. Therefore, the
+                        median height is the average of the heights of the 20</span><span class="fontstyle0">th
+                    </span><span class="fontstyle0">and 21</span><span
+                        class="fontstyle0"><sup>st</sup>&nbsp;</span><span class="fontstyle0">students.<br></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>class</td>
+                                <td>frequency</td>
+                                <td>Cumulative frequency</td>
+                            </tr>
+                            <tr>
+                                <td>145 - 149&nbsp;<br>150 - 154&nbsp;<br>155 - 159&nbsp;<br>160 - 164<br>165 -
+                                    169<br>170 - 174<br>175 - 179</td>
+                                <td>2&nbsp;<br>5&nbsp;<br>16&nbsp;<br>9<br>5<br>2 <br>1</td>
+                                <td>2<br>7<br>23<br>32<br>37<br>39<br>40</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0">Both the 20</span><span class="fontstyle0">th </span><span
+                        class="fontstyle0">and 21 </span><span class="fontstyle0">st </span><span
+                        class="fontstyle0">students falls in the 155 -159 class. This class is called the median
+                        class.<br></span><span class="fontstyle0">Using the formula m = L +</span><span
+                        style="text-decoration: underline;"><span class="fontstyle2">(</span><span
+                            class="fontstyle2">n/2 - C</span><span class="fontstyle2">)</span><span
+                            class="fontstyle2">i<br></span></span><span class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f<br></span><span
+                        class="fontstyle0">Where:<br></span><span class="fontstyle0">L is the lower class limit of the
+                        median class<br></span>N is the total frequency<br>C is the cumulative frequency above the
+                    median class<br>I is the class interval<br><span class="fontstyle0">F is the frequency of the median
+                        class<br><br></span><span class="fontstyle0">Therefore;<br><br></span><span
+                        class="fontstyle0">Height of the 20</span><sup><span class="fontstyle0">th </span></sup><span
+                        class="fontstyle0">student = 154.5 + </span><span class="fontstyle2"><span
+                            style="text-decoration: underline;">13</span> x 5<br></span><span class="fontstyle2">&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        16<br></span><span class="fontstyle0">= 154.5 + 4.0625<br></span><span
+                        class="fontstyle0">=158.5625<br><br></span><span class="fontstyle0">Height of the
+                        21</span><sup><span class="fontstyle0">st </span></sup><span class="fontstyle0">= 154.5 +
+                    </span><span class="fontstyle2"><span style="text-decoration: underline;">14</span> x
+                        5<br></span><span class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        16<br></span><span class="fontstyle0">=154.5 + 4.375<br></span><span
+                        class="fontstyle0">=158.875<br></span><span class="fontstyle0">Therefore median height =
+                    </span><span class="fontstyle2"><span style="text-decoration: underline;">158.5625 +
+                            158.875</span><br></span><span class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2<br></span><span class="fontstyle0">=
+                        158.7 cm</span>
+                </li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0"></span>
+                    <ol style="list-style-type: lower-roman;">
+                        <li><span class="fontstyle0">lower quartile </span><span class="fontstyle2">Q</span><span
+                                class="fontstyle2">1</span><span class="fontstyle0">= L +</span><span
+                                style="text-decoration: underline;"><span class="fontstyle2">(</span><span
+                                    style="text-decoration: underline;"><span
+                                        class="fontstyle2">n/4-C</span></span><span
+                                    class="fontstyle2">)</span></span><span class="fontstyle2"><span
+                                    style="text-decoration: underline;">i</span><br></span><span
+                                class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f<br></span><span
+                                class="fontstyle0">The 10</span><sup><span class="fontstyle0">th </span></sup><span
+                                class="fontstyle0">student falls in the in 155 – 159 class<br><br></span><span
+                                class="fontstyle2">Q</span><sub><span class="fontstyle2">1</span></sub><span
+                                class="fontstyle0">= 154.5 +</span><span style="text-decoration: underline;"><span
+                                    class="fontstyle2">(</span><span class="fontstyle2">40/4 -7</span><span
+                                    class="fontstyle2">)</span></span><span class="fontstyle2"><span
+                                    style="text-decoration: underline;">5</span><br></span><span
+                                class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; 16<br></span><span class="fontstyle2">= 154.</span><span
+                                class="fontstyle0">5 + 0.9375<br></span><span class="fontstyle2">= 155.</span><span
+                                class="fontstyle0">4375</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Upper quartile </span><span
+                                class="fontstyle2">Q</span><sub><span class="fontstyle2">3</span></sub><span
+                                class="fontstyle0">= L +</span><span style="text-decoration: underline;"><span
+                                    class="fontstyle2">(¾</span><span class="fontstyle2">n -C</span><span
+                                    class="fontstyle2">)</span></span><span class="fontstyle2"><span
+                                    style="text-decoration: underline;">i</span><br></span><span
+                                class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f<br></span><span
+                                class="fontstyle0">The 10</span><span class="fontstyle0"><sup>th</sup> </span><span
+                                class="fontstyle0">student fall in the in 155 – 159 class<br></span><span
+                                class="fontstyle2">Q</span><sub><span class="fontstyle2">3</span></sub><span
+                                class="fontstyle0">= 159.5 +&nbsp;</span><span style="text-decoration: underline;"><span
+                                    class="fontstyle2">(¾</span><span class="fontstyle2">&nbsp;x 40 -23</span><span
+                                    class="fontstyle2">)</span></span><span class="fontstyle2"><span
+                                    style="text-decoration: underline;">5</span><br></span><span
+                                class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; 9<br></span><span class="fontstyle2">= 159.</span><span
+                                class="fontstyle0">5 + 3.888<br></span><span class="fontstyle2">= 163.</span><span
+                                class="fontstyle0">3889<br><br></span><span
+                                class="fontstyle0"><strong>Note;</strong><br></span><span class="fontstyle0">The median
+                                corresponds to the middle quartile </span><span class="fontstyle2">Q</span><sub><span
+                                    class="fontstyle2">2 </span></sub><span class="fontstyle0">or the 50</span><span
+                                class="fontstyle0">th </span><span class="fontstyle0">percentile</span></li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0"></span><span class="fontstyle2"><span
+                            style="text-decoration: underline;">80</span> x 40 = 32 </span><span class="fontstyle0">the
+                        32</span><span class="fontstyle0">nd </span><span class="fontstyle0">student falls in the 160 -
+                        164 class<br></span><span class="fontstyle2">100<br></span><span class="fontstyle2">The 80th
+                        percentile</span><span class="fontstyle0">= L +&nbsp;</span><span
+                        style="text-decoration: underline;"><span class="fontstyle2">((</span><span
+                            class="fontstyle2">80/100)n − C</span><span class="fontstyle2">)</span></span><span
+                        class="fontstyle2"><span style="text-decoration: underline;">i</span><br></span><span
+                        class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; f<br></span><span class="fontstyle0">= 159.5 + </span><span
+                        style="text-decoration: underline;"><span class="fontstyle2">(</span><span class="fontstyle2">32
+                            − 23</span><span class="fontstyle2">)</span></span><span class="fontstyle2"><span
+                            style="text-decoration: underline;">5</span><br></span><span class="fontstyle2">&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9<br></span><span
+                        class="fontstyle2">= 159.</span><span class="fontstyle0">5 + 5<br></span><span
+                        class="fontstyle2">= 164.5</span></li>
+            </ol>
+            <p><span class="fontstyle2"></span><strong><span class="fontstyle0">Example 2</span></strong></p>
+            <p><span class="fontstyle0">Determine the upper quartile and the lower quartile for the following set of
+                    numbers<br></span><span class="fontstyle0">5, 1 0 ,6 ,5 ,8, 7 ,3 ,2 ,7 , 8
+                    ,9<br><br></span><strong><span class="fontstyle0">Solution</span></strong></p>
+            <p><span class="fontstyle0">Arranging in ascending order<br></span><span class="fontstyle0">2, 3, 5,5,6,
+                    7,7,8,8,9,1 0<br></span><span class="fontstyle0">The median is 7<br></span><span
+                    class="fontstyle0">The lower quartile is the median of the first half, which is 5.<br></span><span
+                    class="fontstyle0">The upper quartile is the median of the second half, which is 8.</span></p>
+            <p>&nbsp;</p>
+            <h3><a id="MedianfromCumulativeFrequencyCurve">Median from Cumulative Frequency Curve</a></h3>
+            <ul style="list-style-type: disc;">
+                <li><span class="fontstyle0">Graph for cumulative frequency is called an ogive. </span></li>
+                <li><span class="fontstyle0">We plot a graph of cumulative frequency against the&nbsp;upper class
+                        limit.<br><br></span><strong><span class="fontstyle0">Example<br></span></strong><span
+                        class="fontstyle0">Given the class interval of the measurement and the frequency, we first find
+                        the cumulative frequency as&nbsp;shown below.<br></span><span class="fontstyle0"><span
+                            class="fontstyle0">Then draw the graph of cumulative frequency against upper class
+                            limit<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Arm Span (cm)&nbsp;</td>
+                                <td>Frequency (f)&nbsp;</td>
+                                <td>Cumulative<br>Frequency</td>
+                            </tr>
+                            <tr>
+                                <td>140 ≤ x &lt; 145&nbsp;</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>145 ≤ x &lt;&nbsp;150&nbsp;</td>
+                                <td>1</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>150 ≤ x &lt;&nbsp;155&nbsp;</td>
+                                <td>4</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>155 ≤ x &lt;&nbsp;160&nbsp;</td>
+                                <td>8</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>160 ≤ x &lt;&nbsp;165&nbsp;</td>
+                                <td>7</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td>165 ≤ x &lt;&nbsp;170&nbsp;</td>
+                                <td>5</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>170 ≤ x &lt;&nbsp;175&nbsp;</td>
+                                <td>2</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>40</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0"><strong>Solution</strong><br><img class="jch-lazyload"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTAiIGhlaWdodD0iMjYxIj48L3N2Zz4="
+                            data-src="/images/highschoolnotes/mathematics/form_4/matrices_and_transformation/ogive_1.jpg"
+                            alt="ogive 1" width="350" height="261"><noscript><img
+                                src=/images/highschoolnotes/mathematics/form_4/matrices_and_transformation/ogive_1.jpg
+                                alt="ogive 1" width=350 height=261 /></noscript><br></span><strong><span
+                            class="fontstyle0">Example<br></span></strong><span class="fontstyle0">The table below shows
+                        marks of 1 00 candidates in an examination</span><strong><span
+                            class="fontstyle0"><br></span></strong>
+                    <table border="1" class="NormalTable" style="font-weight: 400;">
+                        <tbody>
+                            <tr>
+                                <td>Marks</td>
+                                <td>1 -10</td>
+                                <td>11 -20</td>
+                                <td>21 -30&nbsp;</td>
+                                <td>31 -40</td>
+                                <td>41 -50&nbsp;</td>
+                                <td>51 -60&nbsp;</td>
+                                <td>61 -70&nbsp;</td>
+                                <td>71 -80&nbsp;</td>
+                                <td>81 -90</td>
+                                <td>91 -100</td>
+                            </tr>
+                            <tr>
+                                <td>Frequency</td>
+                                <td>4</td>
+                                <td>9</td>
+                                <td>1 6</td>
+                                <td>24</td>
+                                <td>1 8</td>
+                                <td>1 2</td>
+                                <td>8</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ol style="font-weight: 400; list-style-type: lower-alpha;">
+                        <li><span class="fontstyle0">Determine the median and the quartiles</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">&nbsp;If 55 marks is the pass mark,
+                                estimate how many students passed</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Find the pass mark if 70% of the
+                                students are to pass</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Determine the range of marks
+                                obtained by</span>
+                            <ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0"></span><span class="fontstyle0">The middle 50 % of the
+                                        students</span></li>
+                                <li><span class="fontstyle0"></span><span class="fontstyle0">The middle 80% of the
+                                        students</span></li>
+                            </ol>
+                        </li>
+                    </ol><strong><strong><span class="fontstyle0"><br>Solution<br></span></strong></strong>
+                    <table border="1" class="NormalTable" style="font-weight: 400;">
+                        <tbody>
+                            <tr>
+                                <td>Marks</td>
+                                <td>1 -10</td>
+                                <td>11 -20</td>
+                                <td>21 -30&nbsp;</td>
+                                <td>31 -40</td>
+                                <td>41 -50&nbsp;</td>
+                                <td>51 -60&nbsp;</td>
+                                <td>61 -70&nbsp;</td>
+                                <td>71 -80&nbsp;</td>
+                                <td>81 -90</td>
+                                <td>91 -100</td>
+                            </tr>
+                            <tr>
+                                <td>Frequency</td>
+                                <td>4</td>
+                                <td>9</td>
+                                <td>16</td>
+                                <td>24</td>
+                                <td>18</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>cumulative frequency</td>
+                                <td>4</td>
+                                <td>13</td>
+                                <td>29</td>
+                                <td>53</td>
+                                <td>71</td>
+                                <td>83</td>
+                                <td>91</td>
+                                <td>96</td>
+                                <td>99</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0"><br><strong>Solution<br><img class="jch-lazyload"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNDkiIGhlaWdodD0iMjQyIj48L3N2Zz4="
+                                data-src="/images/highschoolnotes/mathematics/form_4/matrices_and_transformation/ogive_3.jpg"
+                                alt="ogive 3" width="349" height="242"><noscript><img
+                                    src=/images/highschoolnotes/mathematics/form_4/matrices_and_transformation/ogive_3.jpg
+                                    alt="ogive 3" width=349 height=242 /></noscript><br></strong></span>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Reading from the
+                                graph<br></span><span class="fontstyle0">The median = 39.5<br></span><span
+                                class="fontstyle0">The Lower quartile </span><span class="fontstyle2">Q</span><span
+                                class="fontstyle2">1 </span><span class="fontstyle2">= 28.5<br></span><span
+                                class="fontstyle0">The upper quartile </span><span class="fontstyle2">Q</span><span
+                                class="fontstyle2">2 </span><span class="fontstyle2">= 53.5</span></li>
+                        <li><span class="fontstyle2"></span><span class="fontstyle0">23 candidates scored 55 and
+                                over</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Pass mark is 31 if 70% of pupils
+                                are to pass</span></li>
+                        <li><span class="fontstyle0">&nbsp;<br></span>
+                            <ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0">The middle 50% include the marks between the lower and the
+                                        upper quartiles i.e. between 28.5 and&nbsp;</span><span class="fontstyle0">53.5
+                                        marks.</span></li>
+                                <li><span class="fontstyle0"></span><span class="fontstyle0">&nbsp;The middle 80%
+                                        include the marks between the first decile and the 9</span><span
+                                        class="fontstyle0">th </span><span class="fontstyle0">decile i.e between 18 and
+                                        69&nbsp;</span><span class="fontstyle0">marks</span></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ul> 
+            <h2 class="spaced"><a id="MeasureofDispersion">Measure of Dispersion</a></h2>
+            <h3><a id="Range">Range</a></h3>
+            <ul style="list-style-type: disc;">
+                <li><span class="fontstyle0">The difference between the highest value and the lowest
+                        value<br><br></span><strong><span class="fontstyle0">Disadvantage</span></strong></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">It depends only on the two extreme
+                        values</span></li>
+            </ul>
+            <h4>Interquartile range</h4>
+            <ul style="list-style-type: disc;">
+                <li><span class="fontstyle0">The difference between the lower and upper quartiles. It includes the
+                        middle 50% of the values</span></li>
+            </ul>
+            <h4>Semi quartile range</h4>
+            <ul style="list-style-type: disc;">
+                <li><span class="fontstyle0">The difference between the lower quartile and upper quartile divided by
+                        2.</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">It is also called the
+                        quartile&nbsp;deviation.</span></li>
+            </ul>
+            <h3><a id="MeanAbsoluteDeviation">Mean Absolute Deviation</a></h3>
+            <ul style="list-style-type: disc;">
+                <li><span class="fontstyle0">If we find the difference of each number from the mean and find their mean
+                        , we get the mean Absolute&nbsp;deviation</span></li>
+            </ul>
+            <h3><a id="Variance">Variance</a></h3>
+            <ul style="list-style-type: disc;">
+                <li><span class="fontstyle0">The mean of the square of the square of the deviations from the mean is
+                        called is called variance or&nbsp;mean deviation.</span></li>
+            </ul>
+            <p><span class="fontstyle0"><strong>Example<br></strong></span></p>
+            <table border="1" class="NormalTable" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <td>Deviation&nbsp;from&nbsp;mean(d)</td>
+                        <td>+1</td>
+                        <td>-1</td>
+                        <td>+6</td>
+                        <td>-4</td>
+                        <td>-2</td>
+                        <td>-11</td>
+                        <td>+1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>f<sub>i</sub></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>36</td>
+                        <td>1 6</td>
+                        <td>4</td>
+                        <td>121</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle0">Sum </span><span class="fontstyle2">d</span><sup><span class="fontstyle2">2
+                    </span></sup><span class="fontstyle2">= 1 + 1 + 36 + 16 + 4 + 121 + 1 + 100 = 280<br></span><span
+                    class="fontstyle0">Variance =</span><span style="text-decoration: underline;"><span
+                        class="fontstyle2">∑d</span></span><sup><span class="fontstyle2">2</span></sup><span
+                    class="fontstyle0"></span><span class="fontstyle2">=&nbsp;</span><span
+                    style="text-decoration: underline;">280</span>= 35<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;N&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8</p>
+            <p><span class="fontstyle0">The square root of the variance is called the <strong>standard
+                        deviation</strong>. It is also called <strong>root mean
+                        square&nbsp;deviation</strong>.<br></span><span class="fontstyle0">For the above example its
+                    standard deviation = √</span><span class="fontstyle2">35 = 5.9</span></p>
+            <p><span class="fontstyle0"><strong>Example</strong></span></p>
+            <p><span class="fontstyle0">The following table shows the number of children per family in a housing
+                    estate<br></span></p>
+            <table border="1" class="NormalTable">
+                <tbody>
+                    <tr>
+                        <td>Number of children</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Number&nbsp;of&nbsp;families</td>
+                        <td>1&nbsp;</td>
+                        <td>5&nbsp;</td>
+                        <td>11&nbsp;</td>
+                        <td>27&nbsp;</td>
+                        <td>10&nbsp;</td>
+                        <td>4&nbsp;</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle0">Calculate</span></p>
+            <ol style="list-style-type: lower-alpha;">
+                <li><span class="fontstyle0">The mean number of children per family</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">The standard deviation</span></li>
+            </ol>
+            <p><span class="fontstyle0"><strong>Solution</strong><br></span></p>
+            <table border="1" class="NormalTable">
+                <tbody>
+                    <tr>
+                        <td>Number of&nbsp;children&nbsp;(x)</td>
+                        <td>Number of Families (f)</td>
+                        <td>fx</td>
+                        <td>Deviations <br>d= x - m</td>
+                        <td>d<sup>2</sup></td>
+                        <td>fd<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>0 <br>1 <br>2 <br>3 <br>4 <br>5 <br>6</td>
+                        <td>1 <br>5 <br>11 <br>27 <br>10<br>4 <br>2</td>
+                        <td>0 <br>5 <br>22 <br>81 <br>40<br>20<br>12</td>
+                        <td>– 3 <br>– 2 <br>-1 <br>0 <br>1 <br>2 <br>3</td>
+                        <td>9 <br>4 <br>1 <br>0 <br>1 <br>4 <br>9</td>
+                        <td>9<br>20<br>11<br>0<br>10<br>16<br>18</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Σf=60</td>
+                        <td>∑fx=180</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Σfd<sup>2</sup>=–40</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol style="list-style-type: lower-alpha;">
+                <li><span class="fontstyle0">Mean =<span style="text-decoration: underline;">∑fx</span>
+                        =&nbsp;</span><span class="fontstyle2"><span style="text-decoration: underline;">180</span> = 3
+                        childen<br></span><span class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Σf&nbsp;
+                        &nbsp; &nbsp; &nbsp;60</span></li>
+                <li><span class="fontstyle2"></span><span class="fontstyle0">Variance = </span><span
+                        style="text-decoration: underline;"><span class="fontstyle2">∑fd</span></span><span
+                        class="fontstyle2"><sup>2</sup><br></span><span class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;∑f<br></span><span class="fontstyle2">=</span><span
+                        class="fontstyle2"><span style="text-decoration: underline;">84</span><br></span><span
+                        class="fontstyle2">&nbsp; 60<br></span><span class="fontstyle2">= 1.4<br></span><span
+                        class="fontstyle2">standard deviation = √1.4 = 1.183</span></li>
+            </ol>
+            <p><strong><span class="fontstyle0">Example</span></strong></p>
+            <p><span class="fontstyle0">The table below shows the distribution of marks of 40 candidates in a
+                    test<br></span></p>
+            <table border="1" class="NormalTable">
+                <tbody>
+                    <tr>
+                        <td>Marks</td>
+                        <td>1 -10</td>
+                        <td>11- 20</td>
+                        <td>21 -30</td>
+                        <td>31 -40</td>
+                        <td>41 -50</td>
+                        <td>51 -60</td>
+                        <td>61 -70</td>
+                        <td>71 -80</td>
+                        <td>81 -90</td>
+                        <td>91 -100</td>
+                    </tr>
+                    <tr>
+                        <td>frequency</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>9</td>
+                        <td>1 2</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle0">Calculate the mean and standard deviation.<br></span></p>
+            <table border="1" class="NormalTable">
+                <tbody>
+                    <tr>
+                        <td>Marks</td>
+                        <td>Midpoint<br>( x)</td>
+                        <td>Frequency<br>(f)</td>
+                        <td>fx</td>
+                        <td>d= x - m</td>
+                        <td>d<sup>2 </sup></td>
+                        <td>fd<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>1 - 10 <br>11 - 20 <br>21 - 30 <br>31 - 40 <br>41 - 50 <br>51 - 60 <br>61 - 70<br>71 -
+                            80<br>81 - 90<br>91 - 1 00</td>
+                        <td>5.5 <br>15.5 <br>25.5 <br>35.5 <br>45.5 <br>55.5 <br>65.5<br>75.5<br>85.5<br>95.5</td>
+                        <td>2 <br>2 <br>3 <br>9 <br>1&nbsp;&nbsp;<br>5 <br>2 <br>3 <br>1 <br>1</td>
+                        <td>11 .0 <br>31 .0 <br>76.5 <br>319.5 <br>546.0 <br>277.5 <br>131 .0<br>226.5<br>85.5<br>95.5
+                        </td>
+                        <td>- 39.5 <br>-29.5 <br>-19.5 <br>-9.5 <br>0.5 <br>10.5 <br>20.5<br>30.5<br>40.5<br>50.5</td>
+                        <td>1560.25 <br>870.25 <br>380.25 <br>90.25 <br>0.25 <br>110.25
+                            <br>420.25<br>930.25<br>1640.25<br>2550.25</td>
+                        <td>3120.5<br>1740.5<br>1140.75<br>812.25<br>3.00<br>551.25<br>840.5<br>2790.75<br>1640.25<br>2550.25
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Σf=40</td>
+                        <td>Σfx=1800</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Σfd<sup>2</sup>= 15190</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle0">Mean </span><span class="fontstyle2">̅x = <span
+                        style="text-decoration: underline;">∑fx</span> = <span
+                        style="text-decoration: underline;">1800</span>= 45 marks<br></span><span
+                    class="fontstyle2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;∑f&nbsp; &nbsp; &nbsp;
+                    &nbsp;40<br><span class="fontstyle0">Variance =&nbsp;<span style="text-decoration: underline;"><span
+                                class="fontstyle2">∑fd</span></span><sup><span
+                                class="fontstyle2">2</span></sup></span><span class="fontstyle2">= <span
+                            style="text-decoration: underline;">15190</span>= 379.75<br>&nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;∑f&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;40<br>=
+                        379.8<br></span></span><span class="fontstyle0">Standard deviation = √</span><span
+                    class="fontstyle2">379.8&nbsp;</span><span class="fontstyle0">= 19.49<br></span><strong><span
+                        style="text-decoration: underline;">Note;</span><br></strong>- Adding or subtracting a constant
+                to or from each number in a set of data does not alter the value of the&nbsp;variance or standard
+                deviation.</p>
+            <h2 class="spaced"><a id="Moreformulas">More Formulas</a></h2>
+            <ul>
+                <li><span class="fontstyle0">The formula for getting the variance </span><span
+                        class="fontstyle2">s</span><sup><span class="fontstyle2">2 </span></sup><span
+                        class="fontstyle2">of a variance x is<br></span><span class="fontstyle2">d</span><sup><span
+                            class="fontstyle2">2 </span></sup><span class="fontstyle2">= <span
+                            style="text-decoration: underline;">∑(x-̅x)</span></span><sup><span
+                            class="fontstyle2">2</span></sup><span class="fontstyle2"><span
+                            style="text-decoration: underline;">f</span><br></span><span class="fontstyle2">&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;∑f<br></span><span class="fontstyle0">= </span><span
+                        class="fontstyle2"></span><span style="text-decoration: underline;"><span
+                            class="fontstyle2">∑fx</span></span><span class="fontstyle2"><sup>2&nbsp;</sup>−
+                    </span><span class="fontstyle2">(</span><span
+                        class="fontstyle2"><sup>∑fx</sup>/<sub>∑f</sub></span><span
+                        class="fontstyle2">)</span><sup><span class="fontstyle2">2</span></sup><span
+                        class="fontstyle2"><br>&nbsp; &nbsp; ∑f</span></li>
+            </ul>
+            <p><strong><span class="fontstyle0">Example</span></strong></p>
+            <p><span class="fontstyle0">The table below shows the length in centimeter of 80 plants of a particular
+                    species of tomato<br></span></p>
+            <table border="1" class="NormalTable">
+                <tbody>
+                    <tr>
+                        <td>length</td>
+                        <td>152-156</td>
+                        <td>157-161</td>
+                        <td>162-166</td>
+                        <td>167-171</td>
+                        <td>172- 176</td>
+                        <td>177-181</td>
+                    </tr>
+                    <tr>
+                        <td>frequency</td>
+                        <td>12</td>
+                        <td>14</td>
+                        <td>24</td>
+                        <td>15</td>
+                        <td>8</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle0">Calculate the mean and the standard deviation</span></p>
+            <p><span class="fontstyle0"></span><strong><span class="fontstyle0">Solution</span></strong></p>
+            <p><span class="fontstyle0">Let A = 169</span><span class="fontstyle2"><br></span></p>
+            <table border="1" class="NormalTable">
+                <tbody>
+                    <tr>
+                        <td>Length</td>
+                        <td>Mid-point x</td>
+                        <td>x-169</td>
+                        <td>t= <span style="text-decoration: underline;">x-169</span><br>&nbsp; &nbsp; &nbsp; &nbsp; 5
+                        </td>
+                        <td>f</td>
+                        <td>ft</td>
+                        <td>ft<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>152 - 156</td>
+                        <td>154</td>
+                        <td>-15</td>
+                        <td>-3</td>
+                        <td>12</td>
+                        <td>-36</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <td>157 - 161</td>
+                        <td>159</td>
+                        <td>-10</td>
+                        <td>-2</td>
+                        <td>14</td>
+                        <td>-28</td>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <td>162 - 166</td>
+                        <td>164</td>
+                        <td>-5</td>
+                        <td>-1</td>
+                        <td>24</td>
+                        <td>-24</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>167 - 171</td>
+                        <td>169</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>15</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>172 - 176</td>
+                        <td>174</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>177 - 181</td>
+                        <td>179</td>
+                        <td>1 0</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>∑f=80</td>
+                        <td>∑ft=-66</td>
+                        <td>∑ft<sup>2</sup>=224</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="fontstyle2">̅t </span><span class="fontstyle0">= </span><span class="fontstyle2"><span
+                        style="text-decoration: underline;">-66</span> = - 0.825<br>&nbsp; &nbsp; &nbsp;
+                    &nbsp;80<br></span><span class="fontstyle0">Therefore </span><span class="fontstyle2">̅x = -0.825 x
+                    5 + 169<br></span><span class="fontstyle0">= -4.125 + 169<br>= 164.875 ( to 4 s.f)<br>Variance of t
+                    = </span><span style="text-decoration: underline;"><span
+                        class="fontstyle2">∑ft</span></span><sup><span class="fontstyle2">2 </span></sup><span
+                    class="fontstyle2">-&nbsp;<span class="fontstyle2">t</span><sup><span
+                            class="fontstyle2">2</span></sup><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp;∑f&nbsp;</span><span class="fontstyle2"><br></span><span
+                    class="fontstyle0">= </span><span class="fontstyle2"><span
+                        style="text-decoration: underline;">224</span> - (-0.825<span
+                        class="fontstyle2">)</span><sup><span class="fontstyle2">2</span></sup><br>&nbsp;
+                    &nbsp;80</span><span class="fontstyle2"><br></span><span class="fontstyle0">= 2.8 – 0.6806<br>=
+                    2.119<br>Therefore, variance of x = 2.119 x </span><span class="fontstyle2">5</span><span
+                    class="fontstyle2"><sup>2</sup><br></span><span class="fontstyle0">= 52.975<br>= 52.98 ( 4
+                    s.f)<br>Standard deviation of x = √</span><span class="fontstyle2">52.98<br></span><span
+                    class="fontstyle0">= 7.279</span><span class="fontstyle0">= 7.28 (to 2 d.p)</span></p>
+            <h2 class="spaced"><a id="PastKCSEQuestionsontheTopic">Past KCSE Questions on the Topic</a></h2>
+            <ol>
+                <li><span class="fontstyle0"><span class="fontstyle0">Every week the number of absentees in a school was
+                            recorded. This was done for 39 weeks these<br>observations were tabulated as shown
+                            below<br></span></span>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td>Number of absentees&nbsp;</td>
+                                <td>0.3&nbsp;</td>
+                                <td>4 -7&nbsp;</td>
+                                <td>8 -1 1&nbsp;</td>
+                                <td>1 2 - 1 5&nbsp;</td>
+                                <td>1 6 - 1 9&nbsp;</td>
+                                <td>20 - 23</td>
+                            </tr>
+                            <tr>
+                                <td>(Number of weeks)</td>
+                                <td>6</td>
+                                <td>9</td>
+                                <td>8</td>
+                                <td>1 1</td>
+                                <td>3</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0">Estimate the median absentee rate per week in the schoo</span>
+                </li>
+                <li><span class="fontstyle0">The table below shows high altitude wind speeds recorded at a weather
+                        station in a period of 100&nbsp;</span><span class="fontstyle0"><span
+                            class="fontstyle0">days.<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Wind speed&nbsp;(knots)</td>
+                                <td>0 - 19&nbsp;</td>
+                                <td>20 - 39&nbsp;</td>
+                                <td>40 - 59&nbsp;</td>
+                                <td>60-79&nbsp;</td>
+                                <td>80- 99&nbsp;</td>
+                                <td>100-119</td>
+                                <td>120-139</td>
+                                <td>140-159</td>
+                                <td>160-179</td>
+                            </tr>
+                            <tr>
+                                <td>Frequency (days)&nbsp;</td>
+                                <td>9</td>
+                                <td>1 9</td>
+                                <td>22</td>
+                                <td>18</td>
+                                <td>13</td>
+                                <td>1 1</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>On the grid provided draw a cumulative frequency graph for the data</li>
+                        <li>Use the graph to estimate<ol style="list-style-type: lower-roman;">
+                                <li>The interquartile range</li>
+                                <li>The number of days when the wind speed exceeded 1 25 knots</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0">Five pupils A, B, C, D and E obtained the marks 53, 41, 60, 80 and 56
+                        respectively. The table below&nbsp;</span><span class="fontstyle0"><span
+                            class="fontstyle0">shows part of the work to find the standard deviation.<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Pupil</td>
+                                <td>Mark x&nbsp;</td>
+                                <td>x - a&nbsp;</td>
+                                <td>( x-a)<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                                <td>A <br>B <br>C <br>D <br>E</td>
+                                <td>53<br>41<br>60<br>80<br>56</td>
+                                <td>-5<br>-17<br>22<br>2<br>-2</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0"></span>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li><span class="fontstyle0">Complete the table</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Find the standard deviation</span>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">&nbsp;In an agricultural research centre,
+                        the length of a sample of 50 maize cobs were measured and&nbsp;</span><span
+                        class="fontstyle0"><span class="fontstyle0">recorded as shown in the frequency distribution
+                            table below.<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Length in cm</td>
+                                <td>Number of cobs</td>
+                            </tr>
+                            <tr>
+                                <td>8 – 10<br>11 – 13<br>14 – 16<br>17 – 19<br>20 – 22<br>23 - 25</td>
+                                <td>4 <br>7 <br>11<br>15<br>8<br>5</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0">Calculate</span>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">The mean</span></li>
+                        <li><span class="fontstyle0">&nbsp;<br></span>
+                            <ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0">The variance</span></li>
+                                <li><span class="fontstyle0"></span><span class="fontstyle0">The standard
+                                        deviation</span></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">The table below shows the frequency
+                        distribution of masses of 50 new- born calves in a ranch<br></span><span
+                        class="fontstyle0"><strong>Mass (kg)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;Frequency</strong><br></span><span class="fontstyle0">15 – 18&nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2<br></span><span class="fontstyle0">19 – 22&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3<br></span><span class="fontstyle0">23 – 26&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10<br></span><span class="fontstyle0">27 –
+                        30&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;14<br></span><span
+                        class="fontstyle0">31 – 34&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;13<br></span><span class="fontstyle0">35 – 38&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;6<br></span><span class="fontstyle0">39 – 42&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;2</span>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">On the grid provided draw a
+                                cumulative frequency graph for the data</span></li>
+                        <li><span class="fontstyle0"></span><span class="fontstyle0">Use the graph to estimate</span>
+                            <ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0">The median mass</span></li>
+                                <li><span class="fontstyle0">The probability that a calf picked at random has a mass
+                                        lying between 25 kg and 28&nbsp;kg.</span></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0">The table below shows the weight and price of three commodities in a given
+                        period<br></span><span class="fontstyle0"><strong>Commodity&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;Weight&nbsp; &nbsp; &nbsp; &nbsp;Price Relatives</strong><br></span><span
+                        class="fontstyle0">X&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;31&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;25<br></span><span
+                        class="fontstyle0">Y&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;41&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;64<br></span><span
+                        class="fontstyle0">Z&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;21&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;40<br></span><span
+                        class="fontstyle0">Calculate the retail index for the group of commodities.</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">The number of people who attended an
+                        agricultural show in one day was 51 0 men, 1 080 women and&nbsp;</span><span
+                        class="fontstyle0">some children. When the information was represented on a pie chart, the
+                        combined angle for the&nbsp;</span><span class="fontstyle0">men and women was 21 6</span><span
+                        class="fontstyle0">0</span><span class="fontstyle0">. Find the angle representing the
+                        children.</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">The mass of 40 babies in a certain clinic
+                        were recorded as follows:<br></span><span class="fontstyle0">Mass in Kg&nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;No. of babies.<br></span><span class="fontstyle0">1.0 – 1.9&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6<br></span><span class="fontstyle0">2.0 – 2.9&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 14<br></span><span class="fontstyle0">3.0 – 3.9&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10<br></span><span class="fontstyle0">4.0 – 4.9&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7<br></span><span class="fontstyle0">5.0 – 5.9&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2<br>6.0 – 6.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; 1<br>Calculate<br>The inter – quartile range of the data.<br>The standard deviation of
+                        the data using 3.45 as the assumed mean.</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0"><span class="fontstyle0">The data below
+                            shows the masses in grams of 50 potatoes<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Mass (g)</td>
+                                <td>25-34</td>
+                                <td>35-44</td>
+                                <td>45-54</td>
+                                <td>55-64</td>
+                                <td>65-74</td>
+                                <td>75-84&nbsp;</td>
+                                <td>85-94</td>
+                            </tr>
+                            <tr>
+                                <td>No of&nbsp;potatoes</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>16</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>On the grid provide, draw a cumulative frequency curve for the data</li>
+                        <li>Use the graph in (a) above to determine<ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0">The 60</span><span class="fontstyle0">th&nbsp;</span><span
+                                        class="fontstyle0">percentile mass</span></li>
+                                <li><span class="fontstyle0"></span><span class="fontstyle0">The percentage of potatoes
+                                        whose masses lie in the range 53g to 68g</span></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">The histogram below represents the
+                        distribution of marks obtained in a test.<br><img class="jch-lazyload"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMzciIGhlaWdodD0iMTk1Ij48L3N2Zz4="
+                            data-src="/images/highschoolnotes/mathematics/form_4/matrices_and_transformation/histogram_statistics.jpg"
+                            alt="histogram statistics" width="237" height="195"><noscript><img
+                                src=/images/highschoolnotes/mathematics/form_4/matrices_and_transformation/histogram_statistics.jpg
+                                alt="histogram statistics" width=237 height=195 /></noscript><br></span><span
+                        class="fontstyle0">The bar marked A has a height of 3.2 units and a width of 5 units. The bar
+                        marked B has a height of&nbsp;</span><span class="fontstyle0">1.2 units and a width of 10
+                        units<br></span><span class="fontstyle0">If the frequency of the class represented by bar B is
+                        6, determine the frequency of the class&nbsp;</span><span class="fontstyle0">represented by bar
+                        A.</span></li>
+                <li><span class="fontstyle0"></span><span class="fontstyle0">&nbsp;A frequency distribution of marks
+                        obtained by 1 20 candidates is to be represented in a histogram.<br></span><span
+                        class="fontstyle0">The table below shows the grouped marks. Frequencies for all the groups and
+                        also the area and&nbsp;</span><span class="fontstyle0"><span class="fontstyle0">height of the
+                            rectangle for the group 30 – 60 marks.<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Marks</td>
+                                <td>0-10</td>
+                                <td>10-30</td>
+                                <td>30-60</td>
+                                <td>60-70</td>
+                                <td>70-100</td>
+                            </tr>
+                            <tr>
+                                <td>Frequency</td>
+                                <td>12</td>
+                                <td>40</td>
+                                <td>36</td>
+                                <td>8</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Area of rectangle</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>180</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Height of rectangle</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>6</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table> <span class="fontstyle0"></span>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li><span class="fontstyle0">&nbsp;<br></span>
+                            <ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0">Complete the table</span></li>
+                                <li><span class="fontstyle0"></span><span class="fontstyle0">On the grid provided below,
+                                        draw the histogram</span></li>
+                            </ol>
+                        </li>
+                        <li><span class="fontstyle0">&nbsp;<br></span>
+                            <ol style="list-style-type: lower-roman;">
+                                <li><span class="fontstyle0">State the group in which the median mark lies</span></li>
+                                <li><span class="fontstyle0">A vertical line drawn through the median mark divides the
+                                        total area of the histogram into&nbsp;</span><span class="fontstyle0">two equal
+                                        parts.&nbsp;</span><span class="fontstyle0">Using this information or otherwise,
+                                        estimate the median mark</span></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="fontstyle0"><span class="fontstyle0">The table shows the number of bags of sugar per
+                            week and their moving averages<br></span></span>
+                    <table border="1" class="NormalTable">
+                        <tbody>
+                            <tr>
+                                <td>Number of bags per week</td>
+                                <td>340</td>
+                                <td>330</td>
+                                <td>x</td>
+                                <td>343</td>
+                                <td>350</td>
+                                <td>345</td>
+                            </tr>
+                            <tr>
+                                <td>Moving averages</td>
+                                <td>&nbsp;</td>
+                                <td>331</td>
+                                <td>332</td>
+                                <td>y</td>
+                                <td>346</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Find the value of X and Y axis</li>
+                        <li>Find the order of the moving average</li>
+                    </ol>
+                </li>
+            </ol>
+            
+        </div>
+    </div>
+</body>
+
+</html>
