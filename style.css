@@ -85,3 +85,15 @@ a span {
     color: #101010;
     font-weight: 500;
 }
+
+.conf {
+    padding: 1rem 2.5rem;
+    border: 1px solid;
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding-inline: 20rem;
+    }
+}
