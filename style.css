@@ -49,7 +49,7 @@ a {
 }
 
 .queries {
-    padding: 1rem 1.5rem;
+    padding: 1rem .1rem;
 }
 
 
@@ -59,7 +59,7 @@ li img {
 
 .scheme {
     background-color: #10101028;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     margin-top: 6rem;
 }
 
@@ -90,6 +90,9 @@ a span {
     padding: 1rem 2.5rem;
     border: 1px solid;
     margin-top: 2rem;
+}
+li {
+    margin: 1rem ;
 }
 
 @media only screen and (min-width: 1024px) {
